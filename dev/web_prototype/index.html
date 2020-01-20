@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>👁 Panel Viewer 👁</title>
+
+  <link rel="stylesheet" href="./_/css.css">
+  <link rel="stylesheet" href="./_/normalize.css">
+</head>
+<body>
+
+  <div id="nav_container">
+    <div class="nav_item">
+      <select id="selector0">
+        <option value="">ALL</option>
+        <option value="human_history">Human History</option>
+        <option value="natural_history">Natural History</option>
+      </select>
+    </div>
+    
+    <div class="nav_item">
+      <select id="selector1">
+        <option value="">ALL</option>
+        <option value="identification_panel">Identification Panel</option>
+        <option value="object_label">Object Label</option>
+        <option value="story_panel">Story Panel</option>
+      </select>
+    </div>
+      
+    <div class="nav_item">
+      <select id="selector2">
+        <option value="">ALL</option>
+        <option value="horizontal">Horizontal</option>
+        <option value="vertical">Vertical</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="body_container">
+    <div id="sidebar">
+      <!-- .panel_info hidden by default -->
+      <div class="panel_info" id="HH_IP_a">
+        <h1>HH_IP_a</h1>
+        <p class="rule"></p>
+        <p>Human History<br>
+        Natural History</p>
+        <p class="rule"></p>
+        <p>Identification Panel</p>
+        <p class="rule"></p>
+        <p>Horizontal</p>
+        <p class="rule"></p>
+        <p>Title ENG: 5</p>
+        <p>Title FRE: 7</p>
+        <p>Body ENG: 50</p>
+        <p>Body FRE: 60</p>
+        <p>Object name ENG: 5</p>
+        <p>Object name FRE: 7</p>
+        <p>Object desc ENG: 20</p>
+        <p>Object desc FRE: 23</p>
+        <p class="rule"></p>
+      </div>
+
+      <div class="panel_info" id="HH_ROL_GLWD">
+        <h1>HH_ROL_GLWD</h1>
+        <p class="rule"></p>
+        <p>Human History</p>
+        <p class="rule"></p>
+        <p>Object Label</p>
+        <p class="rule"></p>
+        <p>Horizontal</p>
+        <p class="rule"></p>
+        <p>Description for HH_ROL_GLWD</p>
+      </div>
+
+      <div id="sidebar_footnote">
+        <div class="legend_row" style="margin-bottom: .5rem;">
+          <div class="symbol">
+            <p>&#9737;</p>
+          </div>
+          <div class="legend">
+            <p>Denotes new or updated panels</p>
+          </div>
+        </div>
+
+        <div class="legend_row">
+          <div class="symbol">
+            <p>&#9782;</p>
+          </div>
+          <div class="legend">
+            <p>Panel Viewer 0.2</p>
+          </div>
+        </div>
+
+        <div class="legend_row">
+          <div class="symbol">
+            <p>&#9788;</p>
+          </div>
+          <div class="legend">
+            <p>Page built May 3, 2018</p>
+          </div>
+        </div>
+      </div> <!--End sidebar_footnote-->
+    </div> <!--End sidebar-->
+
+    <div id="main_area">
+    </div>
+  </div> <!--End body_container-->
+
+  <div id="json_data">
+    [
+      {
+        "code": "HH_IP_a",
+        "selectors": {
+          "selector0": "human_history",
+          "selector1": "identification_panel",
+          "selector2": "horizontal"
+        }
+      },
+      {
+        "code": "HH_ROL_GLWD",
+        "selectors": {
+          "selector0": "human_history natural_history",
+          "selector1": "object_label",
+          "selector2": "vertical"
+        }
+      },
+      {
+        "code": "HH_SP_H1",
+        "selectors": {
+          "selector0": "human_history",
+          "selector1": "story_panel",
+          "selector2": "vertical"
+        }
+      },
+      {
+        "code": "HH_SP_H3_a",
+        "selectors": {
+          "selector0": "natural_history",
+          "selector1": "story_panel",
+          "selector2": "vertical"
+        }
+      },
+      {
+        "code": "HH_SP_R1",
+        "selectors": {
+          "selector0": "natural_history",
+          "selector1": "story_panel",
+          "selector2": "horizontal"
+        }
+      },
+      {
+        "code": "HH_IP_a_new",
+        "selectors": {
+          "selector0": "human_history",
+          "selector1": "identification_panel",
+          "selector2": "horizontal"
+        }
+      },
+      {
+        "code": "HH_ROL_GLWD_new",
+        "selectors": {
+          "selector0": "human_history natural_history",
+          "selector1": "object_label",
+          "selector2": "vertical"
+        }
+      },
+      {
+        "code": "HH_SP_H3_a_new",
+        "selectors": {
+          "selector0": "natural_history",
+          "selector1": "story_panel",
+          "selector2": "vertical"
+        }
+      },
+
+      {
+        "code": "HH_SP_H1",
+        "selectors": {
+          "selector0": "human_history",
+          "selector1": "story_panel",
+          "selector2": "vertical"
+        }
+      },
+      {
+        "code": "HH_SP_H3_a",
+        "selectors": {
+          "selector0": "natural_history",
+          "selector1": "story_panel",
+          "selector2": "vertical"
+        }
+      },
+      {
+        "code": "HH_SP_R1",
+        "selectors": {
+          "selector0": "natural_history",
+          "selector1": "story_panel",
+          "selector2": "horizontal"
+        }
+      },
+      {
+        "code": "HH_IP_a_new",
+        "selectors": {
+          "selector0": "human_history",
+          "selector1": "identification_panel",
+          "selector2": "horizontal"
+        }
+      }
+    ]
+  </div>
+
+  <script src="./_/src/panelsObj.js" type="application/javascript"></script>
+  <script src="./_/script.js" type="application/javascript"></script>
+</body>
+</html>
